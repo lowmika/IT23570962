@@ -1,0 +1,23 @@
+{
+  "name": "tamil-transliteration-test-suite",
+  "version": "1.0.0",
+  "description": "Automated end-to-end test suite for validating Tamil transliteration conversion on the Changathi Tamil translator web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:watch": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug"
+  },
+  "keywords": [
+    "playwright",
+    "tamil",
+    "transliteration",
+    "testing",
+    "automation"
+  ],
+  "author": "IT23570962",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0"
+  }
+}
