@@ -108,7 +108,7 @@ test.describe('Positive Tamil Transliteration Tests', () => {
       'இன்று காலையில் எனது பக்கத்து வீட்டு அருகே ஐயோ! என சத்தம் கேட்ட்து, ஓடி பார்த்தேன் அவர் கீழே விழுந்து இருந்தார்');
   }); 
 
-  test('Pos_Fun_0017 - thozhil transliteration', async ({ page }, testInfo) => {
+  test('Pos_Fun_0017 - general phrase transliteration', async ({ page }, testInfo) => {
     await runTest(page, testInfo, 'aachchi kadai ammavin thozhil migavum vettrikaramaga ulladhu', 
       'ஆச்சி கடை அம்மாவின் தொழில் மிகவும் வெற்றிகரமாக உள்ளது');
   }); 

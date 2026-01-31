@@ -2,12 +2,12 @@ const { test, expect } = require('@playwright/test');
 
 async function runTest(page, testInfo, input, expected) {
   await page.goto('https://tamil.changathi.com');
-  await page.waitForLoadState('networkidle');
+  await page.waitForLoadState('domcontentloaded');
 
   const inputBox = page.locator('textarea, input[type="text"]').first();
   await inputBox.waitFor({ state: 'visible', timeout: 10000 });
   await inputBox.clear();
-  await inputBox.type(input, { delay: 75 });
+  await inputBox.type(input);
   await inputBox.press('Space');
 
   let output = '';
